@@ -1,0 +1,13 @@
+.intro {
+    position: relative;
+    width: 100vw;
+
+    transform: translate3d(-50%, 0, 0);
+    left: 50%;
+    overflow: hidden;
+    max-height: calc(100vh - 100px);
+
+    video {
+        width: 100vw;
+    }
+}

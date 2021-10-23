@@ -1,0 +1,70 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+
+    &__icons {
+        display: flex;
+        align-items: center;
+
+        a {
+            margin: 0 30px;
+        }
+
+        &__wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        &__logo {
+            img {
+                width: 120px;
+            }
+        }
+
+        &__social {
+            img {
+                width: 45px;
+            }
+        }
+
+        &__text {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 23px;
+            line-height: 33px;
+
+            color: #000000;
+        }
+    }
+
+    &__btn {
+        &__connect {
+            outline: unset;
+            border: unset;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 23px;
+            line-height: 33px;
+
+            color: #000000;
+
+            background-color: white;
+            padding: 5px 10px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .navBar {
+        &__icons {
+            &__wrapper {
+                display: none;
+            }
+        }
+    }
+}

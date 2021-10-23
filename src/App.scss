@@ -1,0 +1,30 @@
+@font-face {
+	font-family: 'Songwriter Draft';
+	src: local('Songwriter Draft'),
+		 url('./assets/fonts/SongwriterDraft-Regular.otf') format('truetype'), /* Super Modern Browsers */
+}
+
+@font-face {
+	font-family: 'Angry Android';
+	src: local('Angry Android'),
+		 url('./assets/fonts/Angry Android.otf') format('truetype'), /* Super Modern Browsers */
+}
+
+body {
+    background-color: whtie;
+    caret-color: transparent;
+    color: rgb(0, 0, 0);
+	overflow-x: hidden;
+}
+
+a {
+    text-decoration: unset;
+    color: white;
+    cursor: pointer;
+}
+
+button {
+	outline: unset;
+	border: unset;
+	cursor: pointer;
+}
