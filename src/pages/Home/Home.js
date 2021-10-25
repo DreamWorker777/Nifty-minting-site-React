@@ -1,4 +1,3 @@
-import './Home.scss';
 import NavBar from '../../components/NavBar/NavBar';
 import Intro from '../../components/Intro/Intro';
 import NodeStone from '../../components/NodeStone/NodeStone';
@@ -9,7 +8,7 @@ import Team from '../../components/Team/Team';
 
 export const Home = () => {
     return (
-        <div className="container">            
+        <div className="home">
             <NavBar />
             <Intro />
             <NodeStone />
