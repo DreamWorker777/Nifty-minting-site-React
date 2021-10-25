@@ -7,7 +7,7 @@
 
     &__topTransition {
         position: absolute;
-        top: 0.3vw;
+        top: 5px;
         width: 100%;
         transform: translateY(-100%);
         
@@ -28,6 +28,7 @@
 
     &__main {
         position: relative;
+        background: white;
 
         &__jewelLeft {
             position: absolute;
@@ -83,18 +84,18 @@
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
     .nodeStone {
         &__main {
             &__jewelLeft {
                 img {
-                    width: 15vw;
+                    width: 12vw;
                 }
             }
 
             &__jewelRight {
                 img {
-                    width: 6vw;
+                    width: 4vw;
                 }
             }
         }

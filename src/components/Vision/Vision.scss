@@ -9,7 +9,9 @@
     &__sidePic {
         position: absolute;
         right: 0;
-        width: 33%;
+        // width: 33%;
+        height: 100%;
+        overflow: hidden;
 
         img {
             width: 100%;
@@ -89,6 +91,36 @@
                 font-weight: 30vw;
                 font-size: 2.8vw;
                 line-height: 3.3vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .vision {
+        &__main {
+            padding-left: 5vw;
+            padding-right: 5vw;
+
+            &__title {
+                img {
+                    width: 70%;
+                }
+            }
+
+            &__desc {
+                font-size: 5vw;
+                line-height: 5.8vw;
+                
+                color: #FFFFFF;
+
+                padding: 5vw 0;
+            }
+
+            &__content {
+                font-weight: 30vw;
+                font-size: 3.8vw;
+                line-height: 4.3vw;
             }
         }
     }
