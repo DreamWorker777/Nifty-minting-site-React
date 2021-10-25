@@ -36,7 +36,7 @@ export const NodeStone = () => {
                     </button>
 
                     <div className="nodeStone__main__mint__counter">
-                        <button onClick={ () => setNumber(prev => prev - 1) }>
+                        <button onClick={ () => number > 1 ? setNumber(prev => prev - 1) : null }>
                             <img src={MinusBtn} alt="pic1"></img>
                         </button>
                         <div>
