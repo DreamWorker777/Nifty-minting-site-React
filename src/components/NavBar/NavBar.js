@@ -3,6 +3,7 @@ import logo from '../../assets/img/nav/NiftyLogo 1.svg';
 import discordIcon from '../../assets/img/nav/DiscordIcon 1.svg';
 import openSeaIcon from '../../assets/img/nav/OpenSeaIcon-Blk 1.svg';
 import twitterIcon from '../../assets/img/nav/TwitterIcon 1.svg';
+import { Link } from 'react-scroll'
 
 export const NavBar = () => {
     return (
@@ -14,25 +15,32 @@ export const NavBar = () => {
                     </a>
 
                     <div className="navBar__icons__wrapper">
-                        <a href='#javascript' className="navBar__icons__social">
+                        <a href='https://twitter.com/nifty_io' className="navBar__icons__social">
                             <img src={twitterIcon} alt="logo"></img>
                         </a>
 
-                        <a href='#javascript' className="navBar__icons__social">
+                        <a href='http://discord.gg/nifty' className="navBar__icons__social">
                             <img src={discordIcon} alt="logo"></img>
                         </a>
 
-                        <a href='#javascript' className="navBar__icons__social">
+                        <a href='https://opensea.io/collection/nodestones' className="navBar__icons__social">
                             <img src={openSeaIcon} alt="logo"></img>
                         </a>
 
-                        <a href='#javascript' className="navBar__icons__text">
+                        <a href='https://medium.com/@nifty.io/the-new-renaissance-2ba6b029e88b' className="navBar__icons__text">
                             WhitePaper
                         </a>
 
-                        <a href='#javascript' className="navBar__icons__text">
+                        <Link
+                            smooth={true} 
+                            duration={500} 
+                            spy={true} 
+                            to="trailer"
+                            className="navBar__icons__text"
+                            offset={-50}
+                        >
                             Trailer
-                        </a>
+                        </Link>
                     </div>
 
                     <div className="navBar__dropDownMenu">
@@ -40,15 +48,23 @@ export const NavBar = () => {
                             <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
                         </button>
                         <div className="navBar__dropDownMenu__content">
-                            <a href='#javascript'>Twitter</a>
+                            <a href='https://twitter.com/nifty_io'>Twitter</a>
 
-                            <a href='#javascript'>Discord</a>
+                            <a href='http://discord.gg/nifty'>Discord</a>
 
-                            <a href='#javascript'>OpenSea</a>
+                            <a href='https://opensea.io/collection/nodestones'>OpenSea</a>
 
-                            <a href='#javascript'>WhitePaper</a>
+                            <a href='https://medium.com/@nifty.io/the-new-renaissance-2ba6b029e88b'>WhitePaper</a>
 
-                            <a href='#javascript'>Trailer</a>
+                            <Link
+                                smooth={true} 
+                                duration={500} 
+                                spy={true} 
+                                to="trailer"
+                                offset={-50}
+                            >
+                                Trailer
+                            </Link>
                         </div>
                     </div>
                 </div>

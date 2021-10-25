@@ -10,6 +10,12 @@
 		 url('./assets/fonts/Angry Android.otf') format('truetype'), /* Super Modern Browsers */
 }
 
+@font-face {
+	font-family: 'Roboto';
+	src: local('Roboto'),
+		 url('./assets/fonts/Roboto/Roboto-Light.ttf') format('truetype'), /* Super Modern Browsers */
+}
+
 body {
     background-color: whtie;
     caret-color: transparent;

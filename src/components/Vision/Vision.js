@@ -6,7 +6,7 @@ import bottomTransition from '../../assets/img/vision/SectionTransition2 3.svg';
 
 export const Vision = () => {
     return (
-        <section className="vision">
+        <section className="vision" id="vision">
             <div className="vision__sidePic">
                 <img alt="pic" src={sidePic}></img>
             </div>

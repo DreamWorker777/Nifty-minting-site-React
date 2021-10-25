@@ -61,11 +61,29 @@
 
     &__bottomTransition {
         position: absolute;
-        bottom: 1px;
+        bottom: -5px;
         width: 100%;
-        transform: translateY(100%);
+
         img {
             width: 100%;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .team {
+        &__title {
+            font-size: 12vw;
+            line-height: 14vw;
+        }
+    
+        &__content {    
+            &__item {    
+                &__desc {
+                    font-size: 3.1vw;
+                    line-height: 3.6vw;
+                }
+            }
         }
     }
 }

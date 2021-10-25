@@ -7,7 +7,7 @@ import openSeaIcon from '../../assets/img/footer/OpenSeaIcon-White 1.svg';
 import twitterIcon from '../../assets/img/footer/TwitterIcon-White 1.svg';
 import lockerIcon from '../../assets/img/footer/locker.svg';
 
-import back from '../../assets/img/team/back.png';
+import { Link } from 'react-scroll'
 
 export const Footer = () => {
     return (
@@ -23,20 +23,63 @@ export const Footer = () => {
 
                 <div className="footer__links">
                     <div className="footer__links__icons">
-                        <a href="#javascript;"><img src={twitterIcon} alt="logo"></img></a>
-                        <a href="#javascript;"><img src={discordIcon} alt="logo"></img></a>
-                        <a href="#javascript;"><img src={openSeaIcon} alt="logo"></img></a>
+                        <a href="https://twitter.com/nifty_io"><img src={twitterIcon} alt="logo"></img></a>
+                        <a href="http://discord.gg/nifty"><img src={discordIcon} alt="logo"></img></a>
+                        <a href="https://opensea.io/collection/nodestones"><img src={openSeaIcon} alt="logo"></img></a>
                     </div>
 
                     <div className="footer__links__first">
-                        <a href="#javascript;">Nodestones</a>
-                        <a href="#javascript;">Our Vision</a>
-                        <a href="#javascript;">Roadmap</a>
+                        <Link
+                            smooth={true} 
+                            duration={500} 
+                            spy={true} 
+                            to="nodeStone"
+                            offset={-70}
+                        >
+                            Nodestones
+                        </Link>
+
+                        <Link
+                            smooth={true} 
+                            duration={500} 
+                            spy={true} 
+                            to="vision"
+                            offset={-50}
+                        >
+                            Our Vision
+                        </Link>
+
+                        <Link
+                            smooth={true} 
+                            duration={500} 
+                            spy={true} 
+                            to="roadMap"
+                            offset={-50}
+                        >
+                            Roadmap
+                        </Link>
                     </div>
 
                     <div className="footer__links__second">
-                        <a href="#javascript;">Realms</a>
-                        <a href="#javascript;">Team</a>
+                        <Link
+                            smooth={true} 
+                            duration={500} 
+                            spy={true} 
+                            to="realm"
+                            offset={-50}
+                        >
+                            Realms
+                        </Link>
+
+                        <Link
+                            smooth={true} 
+                            duration={500} 
+                            spy={true} 
+                            to="team"
+                            offset={-50}
+                        >
+                            Team
+                        </Link>
                         <a href="#javascript;">Smart Contract</a>
                     </div>
 

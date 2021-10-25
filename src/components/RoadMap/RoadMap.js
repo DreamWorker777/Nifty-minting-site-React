@@ -2,7 +2,7 @@ import './RoadMap.scss';
 
 import roadMapLogo from '../../assets/img/roadmap/1.gif';
 import platformRoadMapLogo from '../../assets/img/roadmap/2.gif';
-import bottomTransition from '../../assets/img/nodestone/SectionTransition2 2.svg';
+import bottomTransition from '../../assets/img/roadmap/SectionTransition2 2.svg';
 import mainBack from '../../assets/img/roadmap/back1.png';
 import platformBack from '../../assets/img/roadmap/back2.png';
 
@@ -62,7 +62,7 @@ export const RoadMap = () => {
     ];
 
     return (
-        <section className="roadMap">
+        <section className="roadMap" id="roadMap">
             <div className="roadMap__bottomTransition">
                 <img alt="top" src={ bottomTransition }></img>
             </div>

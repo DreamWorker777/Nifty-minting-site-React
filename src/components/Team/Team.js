@@ -8,7 +8,7 @@ import card4 from '../../assets/img/team/card4.svg';
 import card5 from '../../assets/img/team/card5.svg';
 import card6 from '../../assets/img/team/card6.svg';
 
-import bottomTransition from '../../assets/img/team/SectionTransition2 3.svg';
+import bottomTransition from '../../assets/img/team/bottom.svg';
 
 export const Team = () => {
     const info = [
@@ -39,7 +39,7 @@ export const Team = () => {
     ]
 
     return (
-        <section className="team">
+        <section className="team" id="team">
             <div className="container">
                 <div className="team__back">
                     <img alt="back" src={ back }></img>

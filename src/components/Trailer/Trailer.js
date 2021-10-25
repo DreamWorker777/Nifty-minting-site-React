@@ -12,7 +12,7 @@ export const Trailer = () => {
     const [show, setShow] = useState(false);
 
     return (
-        <section className="trailer">
+        <section className="trailer" id="trailer">
             {
                 !show ? (
                     <div>
@@ -38,7 +38,7 @@ export const Trailer = () => {
                     </div>
                 ) : (
                     <div className="trailer__video">
-                        <video className="trailer__video" controls>
+                        <video className="trailer__video" controls onEnded={() => { setShow(false); }}>
                             <source src={video} type="video/mp4"/>
                         </video>
                     </div>

@@ -28,7 +28,7 @@
 
     &__main {
         position: relative;
-        background: white;
+        background: #efefef;
 
         &__jewelLeft {
             position: absolute;
@@ -47,6 +47,41 @@
 
             img {
                 width: 80px;
+            }
+        }
+
+        &__mint {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &__place {
+                margin-right: 10px;
+                img {
+                    width: 300px;
+                }
+            }
+
+            &__counter {
+                display: flex;
+                align-items: center;
+
+                button {
+                    margin: 0 10px;
+                    img {
+                        width: 50px;
+                    }
+                }
+
+                div {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 51px;
+                    line-height: 60px;
+
+                    color: #989898;
+                }
             }
         }
 
@@ -111,6 +146,29 @@
 
             &__jewelRight {
                 bottom: 5vw;
+            }
+
+            &__mint {
+                &__place {
+                    margin-right: 1vw;
+                    img {
+                        width: 31vw;
+                    }
+                }
+    
+                &__counter {
+                    button {
+                        margin: 0 1vw;
+                        img {
+                            width: 5.1vw;
+                        }
+                    }
+    
+                    div {
+                        font-size: 5.2vw;
+                        line-height: 6.1vw;
+                    }
+                }
             }
 
             &__title {

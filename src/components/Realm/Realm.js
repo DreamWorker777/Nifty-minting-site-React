@@ -30,7 +30,7 @@ export const Realm = () => {
     })
 
     return (
-        <section className="realm">
+        <section className="realm" id="realm">
             <div className="realm__back" ref={myRef}>
                 <div className={ isWidthBig ? 'fullWidth' : 'fullHeight' }>
                     <video autoPlay loop muted>

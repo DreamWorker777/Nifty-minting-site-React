@@ -94,6 +94,8 @@
         }
 
         &__desc {
+            padding: 5vw 0;
+
             font-size: 3.2vw;
             line-height: 3.8vw;
     
@@ -101,6 +103,10 @@
                 font-size: 4.4vw;
                 line-height: 5.3vw;
             }
+        }
+
+        &__contents {
+            margin: 5vw 0;
         }
     }
 }
