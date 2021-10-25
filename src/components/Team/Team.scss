@@ -5,7 +5,6 @@
     left: 50%;
     z-index: 96;
     background: radial-gradient(47.47% 47.47% at 50% 52.53%, #181818 0%, #353535 83.33%);
-    // overflow: hidden;
 
     .container {
         padding: 10vw 50px;
@@ -13,8 +12,57 @@
 
     &__back {
         position: absolute;
-        width: 100%;
+        width: 90%;
+        bottom: 0;
 
+        img {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        font-family: Angry Android;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 117px;
+        line-height: 135px;
+        padding: 5vw 0;
+
+        color: #FFFFFF;
+
+        text-align: center;
+    }
+
+    &__content {
+        padding: 0 10vw;
+
+        &__item {
+            margin: 2vw 0;
+            &__img {
+                width: 28%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            &__desc {
+                font-family: Roboto;
+                font-style: italic;
+                font-weight: 200;
+                font-size: 30px;
+                line-height: 35px;
+
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    &__bottomTransition {
+        position: absolute;
+        bottom: 1px;
+        width: 100%;
+        transform: translateY(100%);
         img {
             width: 100%;
         }

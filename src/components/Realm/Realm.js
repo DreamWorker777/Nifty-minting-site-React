@@ -1,6 +1,8 @@
+import { useState, useEffect, useRef } from 'react';
+
 import './Realm.scss';
 import title from '../../assets/img/realm/Realms 1.png';
-import back from '../../assets/img/realm/RealmsAnimation.png';
+import back from '../../assets/videos/RealmBg.mp4';
 import bottomTransition from '../../assets/img/realm/SectionTransition2 3.svg';
 import card1 from '../../assets/img/realm/card1.svg';
 import card2 from '../../assets/img/realm/card2.svg';
@@ -10,10 +12,31 @@ import card5 from '../../assets/img/realm/card5.svg';
 import card6 from '../../assets/img/realm/card6.svg';
 
 export const Realm = () => {
+    const [isWidthBig, setIsWidthBig] = useState(true);
+    const myRef = useRef();
+
+    const checkAspect = () => {
+        if( myRef.current.clientWidth > myRef.current.clientHeight)
+            setIsWidthBig(true);
+        else {
+            setIsWidthBig(false);
+        }
+    }
+
+    useEffect(() => {
+        checkAspect();
+
+        setInterval(checkAspect, 500);
+    })
+
     return (
         <section className="realm">
-            <div className="realm__back">
-                <img alt="back" src={ back }></img>
+            <div className="realm__back" ref={myRef}>
+                <div className={ isWidthBig ? 'fullWidth' : 'fullHeight' }>
+                    <video autoPlay loop muted>
+                        <source src={back} type="video/mp4"/>
+                    </video>
+                </div>
             </div>
 
             <div className="container">

@@ -2,7 +2,9 @@ import './RoadMap.scss';
 
 import roadMapLogo from '../../assets/img/roadmap/1.gif';
 import platformRoadMapLogo from '../../assets/img/roadmap/2.gif';
-import bottomTransition from '../../assets/img/nodestone/SectionTransition2 2.svg'; 
+import bottomTransition from '../../assets/img/nodestone/SectionTransition2 2.svg';
+import mainBack from '../../assets/img/roadmap/back1.png';
+import platformBack from '../../assets/img/roadmap/back2.png';
 
 export const RoadMap = () => {
     const roadMapInfo = [
@@ -71,6 +73,10 @@ export const RoadMap = () => {
                 </div>    
 
                 <div className="container">
+                    <div className="roadMap__main__back">
+                        <img alt="back" src={mainBack}></img>
+                    </div>
+
                     <div className="roadMap__main__titleDesc">
                         Nifty.io is a platform built differently than other projects.
                     </div>
@@ -93,6 +99,7 @@ export const RoadMap = () => {
             </div>
 
             <div className="roadMap__platform">
+
                 <div className="roadMap__main__title">
                         <img alt="title" src={platformRoadMapLogo}></img>
                     </div>
@@ -103,15 +110,21 @@ export const RoadMap = () => {
                         <div className="roadMap__main__desc">
                             This is a long-term, community-wide effort. Nodestones are your access to projects emerging from the nifty.io ecosystem. To learn about the vision we recommend reading the whitepaper. 
                         </div>
-                        {
-                            platRoadMapInfo.map((item, index) => (
-                                <div className="roadMap__main__content" key={index}>
-                                    <div className="roadMap__main__content__content">
-                                        {item.content}
+
+                        <div className="roadMap__platform__contentWrapper">
+                            <div className="roadMap__platform__contentWrapper__back">
+                                <img alt="back" src={platformBack}></img>
+                            </div>
+                            {
+                                platRoadMapInfo.map((item, index) => (
+                                    <div className="roadMap__main__content" key={index}>
+                                        <div className="roadMap__main__content__content">
+                                            {item.content}
+                                        </div>
                                     </div>
-                                </div>
-                            ))
-                        }
+                                ))
+                            }
+                        </div>
                     </div>
                 </div>
         </section>
