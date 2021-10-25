@@ -2,12 +2,18 @@
     position: relative;
     width: 100vw;
 
-    transform: translate3d(-50%, 0, 0);
-    left: 50%;
     overflow: hidden;
-    max-height: calc(100vh - 100px);
+    max-height: calc(100vh - 50px);
+    height: 60vw;
+    display: block;
+    margin-top: 50px;
 
-    video {
-        width: 100vw;
+    &__video {
+        video {
+            width: 100%;
+            position: fixed;
+            object-fit: cover;
+            z-index: 0;
+        }
     }
 }
