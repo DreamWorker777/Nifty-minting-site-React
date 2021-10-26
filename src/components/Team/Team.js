@@ -22,11 +22,11 @@ export const Team = () => {
         },
         {
             img: card3,
-            desc: 'Award winning songwriter, performer, and producer'
+            desc: 'Designer, performer, producer'
         },
         {
             img: card4,
-            desc: 'Multi-blockchain, smart contract developer'
+            desc: 'Smart contract developer'
         },
         {
             img: card5,
@@ -34,7 +34,7 @@ export const Team = () => {
         },
         {
             img: card6,
-            desc: 'Creative director overseeing art development'
+            desc: 'Creative director/ developer'
         }
     ]
 

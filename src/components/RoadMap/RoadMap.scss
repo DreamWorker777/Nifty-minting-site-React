@@ -120,12 +120,30 @@
 
         .roadMap__main__title {
             position: relative;
-            overflow: hidden;
-            height: 25vw;
+            display: flex;
+            flex-direction: column;
+            padding: 4vw 4.3vw;
+            overflow: unset;
+
+            div {
+                font-size: 7.3vw;
+                line-height: 6.3vw;
+                font-family: Angry Android;
+                font-style: normal;
+                font-weight: normal;
+
+                color: #3d3d3d;
+            }
+
+            .second {
+                font-size: 8vw;
+            }
 
             img {
-                position: relative;
-                top: -10vw;
+                position: absolute;
+                right: 0;
+                // top: -10vw;
+                width: 25%;
             }
         }
     }

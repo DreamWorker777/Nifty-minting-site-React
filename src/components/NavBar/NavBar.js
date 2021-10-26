@@ -4,8 +4,13 @@ import discordIcon from '../../assets/img/nav/DiscordIcon 1.svg';
 import openSeaIcon from '../../assets/img/nav/OpenSeaIcon-Blk 1.svg';
 import twitterIcon from '../../assets/img/nav/TwitterIcon 1.svg';
 import { Link } from 'react-scroll'
+import {NotificationManager} from 'react-notifications';
 
 export const NavBar = () => {
+    const connectWallet = () => {
+        NotificationManager.info('Wallet connection currently unavailable! Please retry on launch date.');
+    }
+
     return (
         <nav className="navBar">
             <div className="container">
@@ -70,7 +75,7 @@ export const NavBar = () => {
                 </div>
 
                 <div className="navBar__btn">
-                    <button className="navBar__btn__connect">
+                    <button className="navBar__btn__connect" onClick={ () => connectWallet() }>
                         Connect Wallet
                     </button>
                 </div>

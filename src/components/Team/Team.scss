@@ -7,7 +7,7 @@
     background: radial-gradient(47.47% 47.47% at 50% 52.53%, #181818 0%, #353535 83.33%);
 
     .container {
-        padding: 10vw 50px;
+        padding: 150px 50px;
     }
 
     &__back {
@@ -25,9 +25,9 @@
         font-family: Angry Android;
         font-style: normal;
         font-weight: normal;
-        font-size: 117px;
-        line-height: 135px;
-        padding: 5vw 0;
+        font-size: 150px;
+
+        padding: 70px 0;
 
         color: #FFFFFF;
 
@@ -35,12 +35,17 @@
     }
 
     &__content {
-        padding: 0 10vw;
+        padding: 0 140px;
 
         &__item {
-            margin: 2vw 0;
+            position: relative;
+            margin: 28px 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+
             &__img {
-                width: 28%;
+                width: 90%;
 
                 img {
                     width: 100%;
@@ -51,10 +56,13 @@
                 font-family: Roboto;
                 font-style: italic;
                 font-weight: 200;
-                font-size: 30px;
-                line-height: 35px;
+                font-size: 40px;
 
                 color: #FFFFFF;
+
+                position: absolute;
+                left: 30%;
+                bottom: 14%;
             }
         }
     }
@@ -70,18 +78,56 @@
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1440px) {
     .team {
+        .container {
+            padding: 10vw 2.8vw;
+        }
+
         &__title {
-            font-size: 12vw;
-            line-height: 14vw;
+            font-size: 10vw;
+    
+            padding: 5vw 0;
         }
     
-        &__content {    
-            &__item {    
+        &__content {
+            padding: 0 10vw;
+    
+            &__item {
+                margin: 2vw 0;
+    
                 &__desc {
-                    font-size: 3.1vw;
-                    line-height: 3.6vw;
+                    font-size: 2.8vw;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .team {
+        .container {
+            padding: 10vw 2vw;
+        }
+    
+        &__title {
+            font-size: 15vw;
+    
+            padding: 5vw 0;
+        }
+    
+        &__content {
+            padding: 0 2vw;
+    
+            &__item {
+                margin: 2vw 0;
+                
+                &__img {
+                    width: 100%;
+                }
+    
+                &__desc {
+                    font-size: 4vw;
                 }
             }
         }

@@ -160,3 +160,42 @@
         }
     }
 }
+
+@media (max-width: 500px) {
+    .footer {
+        &__links {
+            a {
+                font-size: 5vw;
+                line-height: 7vw;
+            }
+
+            &__icons {
+                a {
+                    margin: 0 3vw;
+                }
+
+                img {
+                    width: 7vw;
+                }
+
+                padding: 3vw 0;
+            }
+
+            &__first {
+                padding: 3vw 0;
+            }
+
+            &__second {
+                padding: 3vw 0;
+            }
+
+            &__third {
+                padding: 3vw 0;
+
+                img {
+                    width: 4vw;
+                }
+            }
+        }
+    }
+}

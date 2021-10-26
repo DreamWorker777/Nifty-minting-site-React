@@ -13,9 +13,6 @@ export const Footer = () => {
     return (
         <section className="footer">
             <div className="container">
-                {/* <div className="footer__back">
-                    <img alt="back" src={ back }></img>
-                </div> */}
 
                 <div className="footer__logo">
                     <img alt="logo" src={logo}></img>

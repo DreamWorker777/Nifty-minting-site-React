@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './NodeStone.scss';
+import {NotificationManager} from 'react-notifications';
 
 import topTransition from '../../assets/img/nodestone/SectionTransition2 1.svg';
 import bottomTransition from '../../assets/img/nodestone/SectionTransition2 2.svg'; 
@@ -13,6 +14,10 @@ import PlusBtn from '../../assets/img/nodestone/Plus.svg';
 
 export const NodeStone = () => {
     const [number, setNumber] = useState(1);
+
+    const mintAction = () => {
+        NotificationManager.info('Mint action currently unavailable! Please retry on launch date.');
+    }
 
     return (
         <section className="nodeStone" id="nodeStone">
@@ -31,7 +36,7 @@ export const NodeStone = () => {
                 </div>
 
                 <div className="nodeStone__main__mint">
-                    <button className="nodeStone__main__mint__place">
+                    <button className="nodeStone__main__mint__place" onClick={ () => mintAction() }>
                         <img src={mintBtn} alt="pic"></img>
                     </button>
 

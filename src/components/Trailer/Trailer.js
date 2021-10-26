@@ -38,7 +38,7 @@ export const Trailer = () => {
                     </div>
                 ) : (
                     <div className="trailer__video">
-                        <video className="trailer__video" controls onEnded={() => { setShow(false); }}>
+                        <video className="trailer__video" autoPlay controls onEnded={() => { setShow(false); }}>
                             <source src={video} type="video/mp4"/>
                         </video>
                     </div>
