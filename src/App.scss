@@ -41,3 +41,13 @@ button {
     margin-right: auto;
     position: relative;
 }
+
+.notification-container {
+	width: 600px;
+}
+  
+@media (min-width: 0px) and (max-width: 768px) {  
+	.notification-container {
+	  	width: 80%;
+	}
+}
