@@ -1,7 +1,6 @@
 import './RoadMap.scss';
 
 import roadMapLogo from '../../assets/img/roadmap/1.gif';
-import platformRoadMapLogo from '../../assets/img/roadmap/10.png';
 import bottomTransition from '../../assets/img/roadmap/SectionTransition2 2.svg';
 import mainBack from '../../assets/img/roadmap/back1.png';
 import platformBack from '../../assets/img/roadmap/back2.png';

@@ -1,0 +1,106 @@
+.gallery {
+    position: relative;
+    z-index: 101;
+    background: black;
+    width: 100vw;
+    transform: translate3d(-50%, 0, 0);
+    left: 50%;
+    margin-top: -6px;
+
+    &__bottomTransition {
+        position: absolute;
+        bottom: -4vw;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+
+    .container {
+        padding: 3vw;
+    }
+
+    &__desc {
+        font-family: Songwriter Draft;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 36px;
+
+        color: #737373;
+    }
+
+    &__slider {
+        padding: 50px 0;
+        position: relative;
+
+        display: flex;
+
+        &__wrapper {
+            width: 80%;
+        }
+
+        &__eachItem {
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+            div {
+                width: 300px;
+                height: 300px;
+                background-size: cover;
+                border: 1px solid #575757;
+            }
+        }
+
+        &__arrow {
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.2;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .gallery {
+        &__slider {
+            &__eachItem {
+                div {
+                    width: 22vw;
+                    height: 22vw;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .gallery {
+        &__bottomTransition {
+            bottom: -4.2vw;
+        }
+
+        &__desc {
+            font-size: 3vw;
+            line-height: 3.6vw;
+        }
+
+        &__slider {
+            padding: 5vw 0;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery {
+        &__bottomTransition {
+            bottom: -4.8vw;
+        }
+    }
+}

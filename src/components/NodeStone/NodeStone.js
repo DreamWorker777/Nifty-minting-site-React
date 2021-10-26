@@ -3,7 +3,7 @@ import './NodeStone.scss';
 import {NotificationManager} from 'react-notifications';
 
 import topTransition from '../../assets/img/nodestone/SectionTransition2 1.svg';
-import bottomTransition from '../../assets/img/nodestone/SectionTransition2 2.svg'; 
+import bottomTransition from '../../assets/img/nodestone/bottom.svg'; 
 import title from '../../assets/img/nodestone/NodestonesLogo 1.png';
 import jewelLeft from '../../assets/img/nodestone/Amethyst-Left 1.png';
 import jewelRight from '../../assets/img/nodestone/Aquamarine-Right 1.png';
@@ -24,9 +24,7 @@ export const NodeStone = () => {
             <div className="nodeStone__topTransition">
                 <img alt="top" src={ topTransition }></img>
             </div>
-            <div className="nodeStone__bottomTransition">
-                <img alt="top" src={ bottomTransition }></img>
-            </div>
+
             <div className="nodeStone__main">
                 <div className="nodeStone__main__jewelLeft">
                     <img alt="jewel" src={jewelLeft}></img>
@@ -66,6 +64,10 @@ export const NodeStone = () => {
                         Nodestones are randomly minted on the Ethereum blockchain using 39 possible traits. Nodestones place you into 1 of 5 realms and act as a future minting pass. There are also 5 1:1 Nodestones hidden in the mint. All Nodestones are minted randomly by Fair Distribution at 0.1 ETH
                     </div>
                 </div>
+            </div>
+
+            <div className="nodeStone__bottomTransition">
+                <img alt="top" src={ bottomTransition }></img>
             </div>
         </section>
     )

@@ -3,7 +3,7 @@
     width: 100vw;
     transform: translate3d(-50%, 0, 0);
     left: 50%;
-    z-index: 100;
+    z-index: 101;
 
     &__topTransition {
         position: absolute;
@@ -17,10 +17,11 @@
     }
 
     &__bottomTransition {
-        position: absolute;
+        position: relative;
         bottom: 1px;
         width: 100%;
-        transform: translateY(100%);
+        background: #efefef;
+
         img {
             width: 100%;
         }

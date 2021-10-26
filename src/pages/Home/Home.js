@@ -1,6 +1,7 @@
 import NavBar from '../../components/NavBar/NavBar';
 import Intro from '../../components/Intro/Intro';
 import NodeStone from '../../components/NodeStone/NodeStone';
+import Gallery from '../../components/Gallery/Gallery';
 import Trailer from '../../components/Trailer/Trailer';
 import Vision from '../../components/Vision/Vision';
 import RoadMap from '../../components/RoadMap/RoadMap';
@@ -14,6 +15,7 @@ export const Home = () => {
             <NavBar />
             <Intro />
             <NodeStone />
+            <Gallery />
             <Trailer />
             <Vision />
             <RoadMap />
